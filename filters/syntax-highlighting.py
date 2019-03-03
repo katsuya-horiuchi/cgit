@@ -64,7 +64,9 @@ if filename[-6:] == '.ipynb':
     if stdout:
         sys.stdout.write('''
 </code></pre></td></tr></table>
-<link rel="stylesheet" href="/cgit-rendering.css">
+<style>
+    .blob { display: none; }
+</style>
 ''')
         sys.stdout.write("<div>")
         sys.stdout.write(stdout.decode('utf-8'))
